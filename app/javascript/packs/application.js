@@ -3,10 +3,23 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+require("jquery")
+// require("packs/jquery-1.11.0.min")
 require("@rails/ujs").start()
-require("turbolinks").start()
-require("@rails/activestorage").start()
+require("packs/bootstrap.min")
+// require("jquery")
+require("packs/typeahead.bundle")
+require("packs/jquery.easydropdown")
+require("packs/easydrop")
+require("packs/memenu")
+require("packs/mem")
+require("packs/responsiveslides.min")
+require("packs/responsive")
 require("channels")
+require("packs/imagezoom")
+require("packs/jquery.flexslider")
+require("packs/flexs")
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

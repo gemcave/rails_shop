@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>ShopRails</title>
+    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keyword %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+		
+		<%= stylesheet_link_tag 'bootstrap',   media: 'all'%>
+		<%= stylesheet_link_tag 'flexslider',  media: 'all'%>
+		<%= stylesheet_link_tag 'memenu',			 media: 'all'%>
+		<%= stylesheet_link_tag 'style',   		 media: 'all'%>
+		<%= stylesheet_link_tag 'mystyle',		 media: 'all'%>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   </head>
 
   <body>
+
+	<%= render 'include/main/top_header' %>
+
+	<div class="logo">
+		<%= link_to root_path do %>
+			<h1>Luxury Watches</h1>
+		<% end %>
+	</div>
+	<%= render 'include/main/bottom_header' %>
+	<div class="content">
     <%= yield %>
+	</div>
+	<%= render 'include/main/footer' %>
+
+
+	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<!-- <script src="<%= asset_path 'application' %>"></script> -->
   </body>
 </html>
