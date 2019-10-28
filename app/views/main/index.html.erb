@@ -19,7 +19,11 @@
 				<% @brands.each do |i| %>
 					<div class="col-md-4 about-left">
 						<figure class="effect-bubba">
-							<%= image_tag(i.img, alt: "", class: "img-responsive zoom-img") %>
+							<%= image_tag(i.img, alt: "", class: "img-responsive  ") %>
+							<figcaption>
+								<h2><%= i.title %></h2>
+								<p><%= i.description %></p>
+							</figcaption>
 						</figure>
 					</div>
 				<% end %>
@@ -31,7 +35,7 @@
 
 <% if @hits.nil?%>
 	<h2>no brands</h2>
-<% end %>
+<% else %>
 
 <div class="product">
 	<div class="container">
@@ -58,7 +62,7 @@
 									<% end %>
 								</h4>
 							</div>
-							<div class="sech">
+							<div class="srch">
 								<span>
 								-50 %
 								</span>
@@ -71,3 +75,4 @@
 		</div>
 	</div>
 </div>
+<% end %>

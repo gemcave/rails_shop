@@ -3,11 +3,12 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-require("jquery")
-// require("packs/jquery-1.11.0.min")
 require("@rails/ujs").start()
+require("packs/jquery.min")
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
 require("packs/bootstrap.min")
-// require("jquery")
 require("packs/typeahead.bundle")
 require("packs/jquery.easydropdown")
 require("packs/easydrop")
