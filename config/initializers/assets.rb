@@ -12,7 +12,6 @@ Rails.application.config.assets.precompile += %w(style.scss)
 Rails.application.config.assets.precompile += %w(memenu.scss)
 Rails.application.config.assets.precompile += %w(flexslider.scss)
 Rails.application.config.assets.precompile += %w(mystyle.scss)
-
 Rails.application.config.assets.precompile += %w(jquery-1.11.0.min.js)
 Rails.application.config.assets.precompile += %w(simpleCart.min.js)
 Rails.application.config.assets.precompile += %w(memenu.js)
