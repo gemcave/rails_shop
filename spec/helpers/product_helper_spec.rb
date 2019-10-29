@@ -11,5 +11,15 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe ProductHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+	describe 'GET #show' do
+		let(:product) { create: product }
+		subject { get :show, params: { id: product.id }}
+
+		context 'show product' do
+			it 'render show view' do
+				is_exprected.to render_template :show
+			end
+		end
+
+	end
 end

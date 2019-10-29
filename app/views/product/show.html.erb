@@ -1,0 +1,127 @@
+<div class="breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs-main">
+			<ol class="breadcrumb">
+				<li><a href="/"><%= render _breadcrumbs %></a></li>
+				<li class="active"><%= @product.title %></li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+<div class="single-contact">
+	<div class="container">
+		<div class="single-main">
+			<div class="col-md-9 single-main-left">
+				<div class="sngl-top">
+					<div class="col-md-5 single-top-left">
+						<div class="flexslider">
+							<ul class="slides">
+								<li data-thumb="<%= asset_path 's-1.jpg'%>">
+									<div class="thumb-image"><img src="<%= asset_path 's-1.jpg' %>" data-imagezoom="true" alt="" class="img-responsive"></div>	
+								</li>
+								<li data-thumb="<%= asset_path 's-2.jpg'%>">
+									<div class="thumb-image"><img src="<%= asset_path 's-2.jpg' %>" data-imagezoom="true" alt="" class="img-responsive"></div>	
+								</li>
+								<li data-thumb="<%= asset_path 's-3.jpg'%>">
+									<div class="thumb-image"><img src="<%= asset_path 's-3.jpg' %>" data-imagezoom="true" alt="" class="img-responsive"></div>	
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-7 single-top-right">
+						<div class="single-para simpleCart_shelfItem">
+							<h2><%= @product.title %></h2>
+							<div class="star-on">
+								<ul class="star-footer">
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+								</ul>
+								<div class="preview"><a href="#">1 customer preview</a></div>
+								<div class="clearfix"></div>
+							</div>
+							<h5 class="item_price"><%= @product.price %></h5>
+							<% if @product.old_price %>
+								<del><%= @product.old_price ></del>
+							<% end %>
+							<p><%= @product.content %></p>
+							<div class="available">
+								<ul>
+									<li>Color
+										<select>
+											<option>Silver</option>
+											<option>Black</option>
+											<option>Dark Black</option>
+											<option>Red</option>
+										</select>
+									</li>
+									<li class="size-in">Size
+									<select>
+										<option>Large</option>
+										<option>Medium</option>
+										<option>small</option>
+										<option>Large</option>
+										<option>small</option>
+									</select>
+									</li>
+									<div class="clearfix"></div>
+								</ul>
+							</div>
+							<ul class="tag-men">
+								<li><span>CATEGORY</span>
+								<strong> : <!-- 		<a href="/category/<%= @product.category.bytitle %>" style=""> -->
+										<!-- <%= @product.category.title %> -->
+									</a></strong>
+								</li>
+							</ul>
+							<div class="quantify">
+								<input type="number" size="4" value="1" name="quantity" min="1" step="1">
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="tabs">
+					<ul class="menu-_drop">
+						<li class="item1"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Description</a>
+							<ul>
+								<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem2"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+							</ul>
+						</li>
+						<li class="item2"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Additional Information</a>
+							<ul>
+								<li class="subitem2"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+							</ul>
+						</li>
+						<li class="item3"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Review (10)</a>
+							<ul>
+								<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem2"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+							</ul>
+						</li>
+						<li class="item4"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Helpful Lins</a>
+							<ul>
+								<li class="subitem2"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+							</ul>
+						</li>
+						<li class="item5"><a href="#"><img src="<%= asset_path 'arrow.png' %>" alt="">Make a Gift</a>
+							<ul>
+								<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem2"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+								<li class="subitem3"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloribus provident modi officia aut quas.</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
