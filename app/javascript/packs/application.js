@@ -19,6 +19,7 @@ require("packs/responsive")
 require("packs/imagezoom")
 require("packs/jquery.flexslider")
 require("packs/flexs")
+require("packs/my")
 
 
 

@@ -19,7 +19,6 @@ Rails.application.config.assets.precompile += %w(jquery.easydropdown.js)
 Rails.application.config.assets.precompile += %w(responsiveslides.min.js)
 Rails.application.config.assets.precompile += %w(imagezoom.js)
 Rails.application.config.assets.precompile += %w(jquery.flexslider.js)
-Rails.application.config.assets.precompile += %w(my.js)
 Rails.application.config.assets.precompile += %w(bootstrap.min.js)
 Rails.application.config.assets.precompile += %w(glyphicons-halflings-regular.eot)
 Rails.application.config.assets.precompile += %w(glyphicons-halflings-regular.ttf)
@@ -31,6 +30,7 @@ Rails.application.config.assets.precompile += %w(easydrop.js)
 Rails.application.config.assets.precompile += %w(mem.js)
 Rails.application.config.assets.precompile += %w(responsive.js)
 Rails.application.config.assets.precompile += %w(flexs.js)
+Rails.application.config.assets.precompile += %w(my.js)
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
