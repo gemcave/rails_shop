@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+gem 'devise'
 gem 'ancestry'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'coffee-rails', '5.0.0'
@@ -19,6 +20,7 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder'
 gem 'meta-tags'
+gem 'simple_form'
 gem 'breadcrumbs_on_rails'
 gem 'jquery-rails'
 
