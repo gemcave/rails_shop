@@ -8,6 +8,7 @@ require File.expand_path('../config/environment', __dir__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require 'shoulda/matchers'
+require 'devise'
 require 'rspec/json_expectations'
 require 'database_cleaner'
 
@@ -20,6 +21,9 @@ end
 
 RSpec.configure do |config|
 	# https://github.com/thoughtbot/factory_bot/blob/master/GETTING_STARTED.md
+
+	config.include Devise::Test::ControllerHelpers, type: :controller
+
 	config.fixture_path = "#{::Rails.root}/spec/fixtures"
 	config.include FactoryBot::Syntax::Methods
 	config.before(:suite) do
