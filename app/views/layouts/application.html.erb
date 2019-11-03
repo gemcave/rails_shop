@@ -14,6 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+		<%= javascript_pack_tag 'my', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -33,7 +34,6 @@
     <%= yield %>
 	</div>
 	<%= render 'include/main/footer' %>
-
 
 	<!-- <script src="<%= asset_path 'application' %>"></script> -->
   </body>
