@@ -23,6 +23,8 @@ gem 'meta-tags'
 gem 'simple_form'
 gem 'breadcrumbs_on_rails'
 gem 'jquery-rails'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 
 group :development, :test do

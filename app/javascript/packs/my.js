@@ -1,6 +1,5 @@
 
-var Bloodhound = require('../typeahead.bundle')
-var $ = require('jquery')
+// var Bloodhound = require('../typeahead.bundle')
 
 	$.ajaxSetup({
 		headers: {
