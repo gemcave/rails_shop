@@ -4,13 +4,15 @@
 // that code so it'll be compiled.
 
 require("../bootstrap.min")
+// require('bootstrap')
+// require('typeahead.js/dist/typeahead.bundle')
 require("@rails/ujs").start()
 // require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 // require("../jquery.min")
 // require("typeahead.js/dist/typeahead.bundle")
-require("../typeahead.bundle")
+// require("../typeahead.bundle")
 require("../jquery.easydropdown")
 require("../easydrop")
 require("../memenu")

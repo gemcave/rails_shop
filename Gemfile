@@ -7,7 +7,6 @@ gem 'ancestry'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'coffee-rails', '5.0.0'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
-gem 'jquery-rails'
 # Обработка json
 gem 'oj'
 gem 'oj_mimic_json'
@@ -25,6 +24,7 @@ gem 'breadcrumbs_on_rails'
 gem 'jquery-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'pundit'
 
 
 group :development, :test do
@@ -55,4 +55,3 @@ group :test do
 	gem 'shoulda-matchers'
 
 end
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
